@@ -4,8 +4,16 @@ public class ContaPoupanca extends Contas{
 
     private Double taxa;
 
-    protected ContaPoupanca(double saldo, Valor dinheiro, Valor cheque) {
-        super(saldo, dinheiro, cheque);
+    public ContaPoupanca(double novoSaldo, Cheque novoCheque) {
+        super(novoSaldo, novoCheque);
+    }
+
+    public ContaPoupanca(double saldo, double dinheiro) {
+        super(saldo, dinheiro);
+    }
+
+    public ContaPoupanca(double v, Valor dinheiroVivo) {
+        super();
     }
 
 
@@ -25,6 +33,7 @@ public class ContaPoupanca extends Contas{
     }
 
     public void recolhimentoDetaxa(){
+        System.out.println("recolhendo taxa");
 
     }
 }

@@ -8,10 +8,15 @@ public class Valor {
     public Valor() {
     }
 
-    public Valor(Cheque cheque, Double dinheiro) {
+    public Valor(Cheque cheque) {
         this.cheque = cheque;
+    }
+
+    public Valor(Double dinheiro) {
         this.dinheiro = dinheiro;
     }
+
+
 
     public Cheque getCheque() {
         return cheque;
